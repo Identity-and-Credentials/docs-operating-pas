@@ -18,7 +18,7 @@ To configure the **CredHub** pane:
         * **TCP port:** Enter the port of your database server, such as `3306`.
         * **Username:** Enter a unique username to use to access your CredHub database on the database server.
         * **Password:** Enter the password for the provided username.
-        * **CA certificate:** This certificate is used when encrypting traffic to and from the CredHub database.
+        * **CA certificate:** This certificate is used when encrypting traffic to and from the CredHub database. For certificate rotation purpose, you may enter multiple CA certificates in this field.
         * **Skip hostname verification:** Select if you don't want CredHub to verify the identity of your database server during TLS connections.You cannot deactivate hostname verification for TLS connections to Postgres databases. You must select this option if you are configuring an external database on GCP or Azure.
 
       <p> If you deploy <%= vars.app_runtime_abbr %> on AWS using Terraform, you can locate these values in your Terraform output:
